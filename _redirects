@@ -1,0 +1,16 @@
+# Cloudflare Pages redirects and rewrites
+
+# Redirect all traffic to HTTPS
+http://escolhacertacontabil.com.br/* https://www.escolhacertacontabil.com.br/:splat 301!
+http://www.escolhacertacontabil.com.br/* https://www.escolhacertacontabil.com.br/:splat 301!
+
+# Handle SPA routing (if needed in the future)
+/*    /index.html   200
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
