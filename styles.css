@@ -981,7 +981,7 @@ html {
     }
     
     .floating-icons {
-        display: none;
+        display: none !important;
     }
     
     .services-grid {
