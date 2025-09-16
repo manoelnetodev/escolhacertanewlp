@@ -1025,6 +1025,7 @@ html {
         line-height: 1.2;
         font-weight: 700;
         letter-spacing: -0.02em;
+        text-align: center;
     }
     
     .section-subtitle {
@@ -1032,6 +1033,7 @@ html {
         margin-bottom: 2rem;
         line-height: 1.5;
         font-weight: 400;
+        text-align: center;
     }
     
     /* Otimizações de tipografia para mobile */
@@ -1039,6 +1041,11 @@ html {
         font-size: 1rem;
         line-height: 1.6;
         margin-bottom: 1rem;
+        text-align: justify;
+    }
+    
+    .about-description p {
+        text-align: justify;
     }
     
     .btn {
@@ -1109,6 +1116,7 @@ html {
     .section-title {
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
+        text-align: center;
     }
     
     .offer-content {
@@ -1119,10 +1127,12 @@ html {
     .offer-text h2 {
         font-size: 1.8rem;
         line-height: 1.2;
+        text-align: center;
     }
     
     .offer-text p {
         font-size: 1rem;
+        text-align: justify;
     }
     
     .offer-benefits {
@@ -1158,11 +1168,13 @@ html {
     .section-title {
         font-size: 1.8rem;
         margin-bottom: 0.8rem;
+        text-align: center;
     }
     
     .section-subtitle {
         font-size: 0.9rem;
         margin-bottom: 1.5rem;
+        text-align: center;
     }
     
     .btn {
@@ -1182,12 +1194,14 @@ html {
     .feature-card h3 {
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
+        text-align: center;
     }
     
     .service-card p,
     .feature-card p {
         font-size: 0.9rem;
         margin-bottom: 0.8rem;
+        text-align: justify;
     }
     
     .footer-content {
@@ -1609,6 +1623,7 @@ html {
     .offer-text h2,
     .bonus-section h2 {
         font-size: 2rem;
+        text-align: center;
     }
     
     .current-price {
