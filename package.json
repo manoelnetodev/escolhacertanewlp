@@ -4,7 +4,7 @@
   "description": "Landing page para Escolha Certa Contábil",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'No build step required for static site'",
+    "build": "mkdir -p dist && cp -r *.html *.css *.js _headers _redirects robots.txt sitemap.xml dist/ 2>/dev/null || (md dist 2>nul & copy *.html dist\\ & copy *.css dist\\ & copy *.js dist\\ & copy _headers dist\\ & copy _redirects dist\\ & copy robots.txt dist\\ & copy sitemap.xml dist\\)",
     "start": "npx serve . -p 8000"
   },
   "keywords": ["landing-page", "contabilidade", "static-site"],
