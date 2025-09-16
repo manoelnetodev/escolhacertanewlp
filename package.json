@@ -1,0 +1,15 @@
+{
+  "name": "escolha-certa-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page para Escolha Certa Contábil",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required for static site'",
+    "start": "npx serve . -p 8000"
+  },
+  "keywords": ["landing-page", "contabilidade", "static-site"],
+  "author": "Manoel Neto",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
