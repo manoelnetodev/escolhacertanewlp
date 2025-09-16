@@ -950,6 +950,33 @@ html {
         gap: 2rem;
     }
     
+    .about-content {
+        text-align: center;
+    }
+    
+    .about-image {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+    
+    .image-container {
+        max-width: 100%;
+        min-height: 250px;
+        aspect-ratio: 16/10;
+        margin: 0 auto;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+    
+    .floating-icons {
+        display: none;
+    }
+    
     .services-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -1056,6 +1083,20 @@ html {
     .cta-button {
         padding: 0.8rem 1.5rem;
         font-size: 0.95rem;
+    }
+    
+    .about-content {
+        gap: 1.5rem;
+    }
+    
+    .image-container {
+        min-height: 200px;
+        aspect-ratio: 4/3;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
     }
     
     .section {
