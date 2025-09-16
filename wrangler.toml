@@ -1,14 +1,11 @@
 name = "escolha-certa-landing-page"
 compatibility_date = "2024-01-01"
 
-# Configuração para Pages (site estático)
+# Configuração para Cloudflare Pages
+pages_build_output_dir = "dist"
+
+# Build configuration
 [build]
 command = "npm run build"
 cwd = "."
 watch_dir = "."
-
-# Configuração de assets para Pages
-[assets]
-bucket = "./dist"
-include = ["**/*"]
-exclude = [".git/**", "node_modules/**", ".gitignore", "wrangler.toml", "package-lock.json"]
