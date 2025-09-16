@@ -1099,6 +1099,29 @@ html {
         margin-bottom: 1.5rem;
     }
     
+    .offer-content {
+        gap: 1.5rem;
+        padding: 0 10px;
+    }
+    
+    .offer-text h2 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .offer-text p {
+        font-size: 1rem;
+    }
+    
+    .offer-benefits {
+        max-width: 300px;
+    }
+    
+    .offer-card {
+        max-width: 280px;
+        padding: 1.2rem;
+    }
+    
     .section {
         padding: 40px 0;
     }
@@ -1529,10 +1552,29 @@ html {
     .offer-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+        text-align: center;
+    }
+    
+    .offer-text {
+        text-align: center;
+    }
+    
+    .offer-text h2 {
+        font-size: 2rem;
+    }
+    
+    .offer-benefits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        max-width: 400px;
+        margin: 0 auto 2rem auto;
     }
     
     .offer-card {
-        margin-top: 2rem;
+        margin: 2rem auto 0 auto;
+        max-width: 320px;
     }
     
     .bonus-grid {
