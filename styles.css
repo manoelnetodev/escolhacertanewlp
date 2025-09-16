@@ -855,6 +855,8 @@ html {
         background: url('https://457caba9bce08b52709e29af1aa64f58.cdn.bubble.io/f1758043629921x308269214017194100/Green2024%40%40%20%28Imagem%20de%20fundo%20de%20tela%20para%20celular%29.png') no-repeat center center;
         background-size: cover;
         position: relative;
+        min-height: 100vh;
+        padding: 80px 0 40px 0;
     }
     
     .hero::before {
@@ -871,10 +873,16 @@ html {
     .hero .container {
         position: relative;
         z-index: 2;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
     
     .offer-card {
         backdrop-filter: blur(8px);
+        max-width: 320px;
+        padding: 1.5rem;
+        margin: 2rem auto 0 auto;
     }
     
     .hamburger {
@@ -894,14 +902,19 @@ html {
         text-align: center;
         gap: 2rem;
         padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: calc(100vh - 120px);
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         white-space: pre-line;
         line-height: 1.2;
         font-weight: 700;
         letter-spacing: -0.02em;
+        margin-bottom: 1rem;
     }
     
     .hero-subtitle {
@@ -909,6 +922,26 @@ html {
         margin-bottom: 1.5rem;
         line-height: 1.5;
         font-weight: 400;
+    }
+    
+    .price-main {
+        font-size: 2.5rem !important;
+        font-weight: 800;
+        line-height: 1;
+    }
+    
+    .price-label {
+        font-size: 0.9rem;
+    }
+    
+    .price-alt {
+        font-size: 0.85rem;
+    }
+    
+    .cta-button {
+        padding: 0.9rem 1.8rem;
+        font-size: 1rem;
+        font-weight: 600;
     }
     
     .about-content,
@@ -994,6 +1027,35 @@ html {
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 70px 0 30px 0;
+    }
+    
+    .hero-content {
+        padding: 1.5rem 0;
+        min-height: calc(100vh - 100px);
+    }
+    
+    .hero-title {
+        font-size: 1.9rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .offer-card {
+        max-width: 280px;
+        padding: 1.2rem;
+        margin: 1.5rem auto 0 auto;
+    }
+    
+    .price-main {
+        font-size: 2.2rem !important;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
     }
     
     .section {
