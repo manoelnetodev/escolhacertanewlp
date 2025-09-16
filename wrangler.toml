@@ -1,23 +1,14 @@
 name = "escolha-certa-landing-page"
 compatibility_date = "2024-01-01"
 
-[env.production]
-routes = [
-  { pattern = "www.escolhacertacontabil.com.br/*", zone_name = "escolhacertacontabil.com.br" }
-]
-
-# Configuração para site estático
-[site]
-bucket = "./dist"
-
-# Build configuration
+# Configuração para Pages (site estático)
 [build]
-command = "echo 'Static site - no build required'"
+command = "npm run build"
 cwd = "."
 watch_dir = "."
 
-# Assets configuration
-[[assets]]
-bucket = "."
+# Configuração de assets para Pages
+[assets]
+bucket = "./dist"
 include = ["**/*"]
 exclude = [".git/**", "node_modules/**", ".gitignore", "wrangler.toml", "package-lock.json"]
