@@ -27,6 +27,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '24678819608395077');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=24678819608395077&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -81,7 +99,7 @@
                             <span class="price-main">R$ 45,78</span>
                             <span class="price-alt">ou R$449,90 à vista</span>
                         </div>
-                        <button class="cta-button" onclick="window.location.href='https://www.escolhacertacontabil.com.br/matricula'">
+                        <button class="cta-button" onclick="fbq('track', 'Purchase', {currency: 'BRL', value: 449.90}); window.location.href='https://www.escolhacertacontabil.com.br/matricula'">
                             COMEÇAR AGORA
                         </button>
                     </div>
@@ -217,7 +235,7 @@
             </div>
             
             <div class="cta-section">
-                <button class="cta-button-large" onclick="window.location.href='https://www.escolhacertacontabil.com.br/matricula'">Começar meu curso!</button>
+                <button class="cta-button-large" onclick="fbq('track', 'Lead'); window.location.href='https://www.escolhacertacontabil.com.br/matricula'">Começar meu curso!</button>
             </div>
         </div>
     </section>
@@ -350,7 +368,7 @@
                         <div class="current-price">R$ 449,90</div>
                         <div class="installments">ou 12x R$44,78</div>
                     </div>
-                    <button class="cta-button-large" onclick="window.location.href='https://www.escolhacertacontabil.com.br/matricula'">
+                    <button class="cta-button-large" onclick="fbq('track', 'InitiateCheckout'); window.location.href='https://www.escolhacertacontabil.com.br/matricula'">
                         <span>QUERO MEU CURSO</span>
                         <div class="button-icon">🚀</div>
                     </button>
